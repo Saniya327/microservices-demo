@@ -2,14 +2,13 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   labels:
-    app: acm-online-boutique
-  name: acm-online-boutique
+    app: frontend-external
+  name: frontend-external
   namespace: acm-online-boutique
-
   port:
     targetPort: 80
   to:
     kind: Service
-    name: acm-online-boutique
+    name: frontend-external
     weight: 100
   wildcardPolicy: None
