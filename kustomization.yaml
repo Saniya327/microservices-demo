@@ -1,2 +1,3 @@
 resources:
   - kubernetes-manifests.yaml
+  - online-boutique-route.yaml
