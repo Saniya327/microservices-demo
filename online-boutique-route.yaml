@@ -10,6 +10,6 @@ metadata:
     targetPort: 80
   to:
     kind: Service
-    name: online-boutique
+    name: acm-online-boutique
     weight: 100
   wildcardPolicy: None
