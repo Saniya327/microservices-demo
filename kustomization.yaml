@@ -1,4 +1,3 @@
 resources:
-  - clusterrolebinding-default.yaml
   - kubernetes-manifests.yaml
-  - online-boutique-route.yaml
+  - frontend-external-route.yaml
