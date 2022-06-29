@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: frontend-external
+  namespace: online-boutique
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: frontend-external
+    weight: 100
+  wildcardPolicy: None
