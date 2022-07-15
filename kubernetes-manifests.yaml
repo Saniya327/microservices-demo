@@ -664,6 +664,14 @@ spec:
         app: redis-cart
     spec:
       containers:
+      - args:
+        - --appendonly
+        - "yes"
+        - --save
+        - "30"
+        - "100"
+        image: redis:alpine
+        imagePullPolicy: IfNotPresent
       - name: redis
         image: redis:alpine
         ports:
